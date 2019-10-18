@@ -8,7 +8,7 @@ In the file that was opened at the end we can see that there are already some al
 1.Add an alias to the file
 `alias <name_alias>='<command you want alias to execute>'`
 
-*example
+*example*
 `alias startall='sudo apt update && sudo apt upgrade && sudo apt install -f && sudo apt autoremove && sudo apt autoclean && sudo apt install -f'`
 
 1.save the file
