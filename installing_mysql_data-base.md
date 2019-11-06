@@ -4,5 +4,5 @@ to perform database installation.
 
 1. installing mysql-server
 `sudo apt install mysql-server`
-<br>
+1.installing securete of data-base
 `sudo mysql_secure_installation`
