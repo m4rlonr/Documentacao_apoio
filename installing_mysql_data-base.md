@@ -14,6 +14,7 @@ Installing securete of data-base
   `sudo xed /etc/mysql/mysql.conf.d/mysqld.cnf`
     ->search for `bind-address`
     ->change `bind-address		= 127.0.0.0` for `bind-address		= 0.0.0.0`
+    ->restart service `sudo service mysql restart`
  
  Installing SGBD mysql-workbench
 `sudo apt install mysql-workbench`
