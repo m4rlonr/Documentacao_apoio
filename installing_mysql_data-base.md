@@ -3,13 +3,19 @@
 To perform database installation.
 
 1. Installing mysql-server
-```sudo apt install mysql-server```
+```
+sudo apt install mysql-server
+```
 
 1. Installing mysql-client
-`sudo apt install mysql-client`
+```
+sudo apt install mysql-client
+```
 
 1. Intalling mysql-workbench
-`sudo apt install mysql-workbench`
+```
+sudo apt install mysql-workbench
+```
 
 1. after installation run the following commands on the terminal
 `sudo mysql -u root -p`
