@@ -1,10 +1,9 @@
 # Installing Data-Base 
 
-##To perform database installation.
+To perform database installation.
 
 1. Installing mysql-server
-```
-sudo apt install mysql-server`
+```sudo apt install mysql-server`
 ```
 
 1. Installing mysql-client
