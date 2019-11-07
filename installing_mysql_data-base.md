@@ -18,12 +18,16 @@ sudo apt install mysql-workbench
 ```
 
 1. after installation run the following commands on the terminal
-`sudo mysql -u root -p`
-`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<YourPassword>'; flush privileges;`
+```
+sudo mysql -u root -p
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<YourPassword>'; flush privileges;
+```
 
 1. right after execute the command
-`exit`
-`sudo service mysql restart`
+```
+exit
+sudo service mysql restart
+```
 
 1. Go to the workbench press to access the database, enter your password and be happy!
 
