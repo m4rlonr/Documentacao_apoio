@@ -1,38 +1,25 @@
 # Installing Data-Base 
 
-to perform database installation.
+To perform database installation.
 
-Installing mysql-server
+1. Installing mysql-server
 `sudo apt install mysql-server`
 
-Installing securete of data-base
-`sudo mysql_secure_installation`
-  ->answers the questions
-  ->save your password
-  
-  Change file
-  `sudo xed /etc/mysql/mysql.conf.d/mysqld.cnf`
-    ->search for `bind-address`
-    ->change `bind-address		= 127.0.0.0` for `bind-address		= 0.0.0.0`
-    ->restart service `sudo service mysql restart`
- 
- Installing SGBD mysql-workbench
+1. Installing mysql-client
+`sudo apt install mysql-client`
+
+1. Intalling mysql-workbench
 `sudo apt install mysql-workbench`
 
-After installing
-`sudo mysql -u root`
-with mysql open
-`SET GLOBAL validate_password_policy=LOW;`
-`SET GLOBAL validate_password_special_char_count = 0;`
-`SET GLOBAL validate_password_length  = 5;`
-`SET GLOBAL validate_password_mixed_case_count = 0;`
+1. after installation run the following commands on the terminal
+`sudo mysql -u root -p`
+`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<YourPassword>'; flush privileges;`
 
-To verify change changes
-`show global variables like 'validate_password%';`
+1. right after execute the command
+`exit`
+`sudo service mysql restart`
 
-To finish setup
-`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<12345mR>';`
+1. Go to the workbench press to access the database, enter your password and be happy!
 
-############################################################################################
-Create new user
+**Create new user
 `create user <name>@'localhost' identified by 'password';`
