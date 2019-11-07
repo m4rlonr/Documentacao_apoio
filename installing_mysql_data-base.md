@@ -32,4 +32,6 @@ sudo service mysql restart
 1. Go to the workbench press to access the database, enter your password and be happy!
 
 **Create new user
-```create user <name>@'localhost' identified by 'password';```
+```
+create user <name>@'localhost' identified by 'password';
+```
