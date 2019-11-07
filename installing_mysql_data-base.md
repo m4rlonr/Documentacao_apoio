@@ -3,8 +3,7 @@
 To perform database installation.
 
 1. Installing mysql-server
-```sudo apt install mysql-server`
-```
+```sudo apt install mysql-server```
 
 1. Installing mysql-client
 `sudo apt install mysql-client`
