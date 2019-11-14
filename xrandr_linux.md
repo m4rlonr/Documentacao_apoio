@@ -38,4 +38,4 @@ xrandr --addmode DP-1 1440x900_60.00
 xrandr --output DP-1 --mode 1440x900_60.00
 ```
 
-# save the script to the desired location with ".sh" format and add it to the startup applications so that when the system goes up it will come to the desired resolution
+## save the script to the desired location with ".sh" format and add it to the startup applications so that when the system goes up it will come to the desired resolution
