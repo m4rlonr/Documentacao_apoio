@@ -9,6 +9,6 @@ In the file that was opened at the end we can see that there are already some al
 `alias <name_alias>='<command you want alias to execute>'`
 
 example:<br>
-*`alias startall='sudo apt update && sudo apt upgrade && sudo apt install -f && sudo apt autoremove && sudo apt autoclean && sudo apt install -f'`*
+*`alias startall='sudo apt update && sudo apt upgrade && sudo apt install -f && sudo apt autoremove && sudo apt autoclean && sudo apt install -f && sudo snap refresh'`*
 
 ->save the file
