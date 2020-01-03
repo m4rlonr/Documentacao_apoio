@@ -1,14 +1,10 @@
-# Add alias 
+# Adicionar alias Linux 
 
-->To add an alias, you need to open the terminal and follow these steps:<br>
-`sudo nano /home/<user>/.bashrc`
+1. Para adicionar alias é necessário que abra o termonal e execute o comando: `sudo nano /home/<user>/.bashrc`
+1. Navegue até o final do arquivo aberto e acione seu alias: `alias <name_alias>='<command you want alias to execute>'`
+1. Salve o arquivo com o comando: `Ctrl + o` e para sair `Ctrl + x`
 
-In the file that was opened at the end we can see that there are already some aliases, just below them you can add your own aliases
-
-->Add an alias to the file:<br>
-`alias <name_alias>='<command you want alias to execute>'`
-
-example:<br>
-*`alias startall='sudo apt update && sudo apt upgrade && sudo apt install -f && sudo apt autoremove && sudo apt autoclean && sudo apt install -f && sudo snap refresh'`*
-
-->save the file
+1. Exemplo de alias pronto:
+```
+alias startall='sudo apt update && sudo apt upgrade && sudo apt install -f && sudo apt autoremove && sudo apt autoclean && sudo apt install -f && sudo snap refresh'
+```
