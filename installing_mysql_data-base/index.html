@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Installing Data-Base - MkLorum</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Installing Data-Base";
+    var mkdocs_page_input_path = "installing_mysql_data-base.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> MkLorum</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Welcome to MkLorum</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../add_alias/">Add alias</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../git_push/">Como usar o GitHub basico</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Installing Data-Base</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#installing-data-base">Installing Data-Base</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#to-perform-database-installation">To perform database installation.</a></li>
+        
+            <li><a class="toctree-l3" href="#1-installing-mysql-server">1. Installing mysql-server</a></li>
+        
+            <li><a class="toctree-l3" href="#2-installing-mysql-client">2. Installing mysql-client</a></li>
+        
+            <li><a class="toctree-l3" href="#3-intalling-mysql-workbench">3. Intalling mysql-workbench</a></li>
+        
+            <li><a class="toctree-l3" href="#5-after-installation-run-the-following-commands-on-the-terminal">5. after installation run the following commands on the terminal</a></li>
+        
+            <li><a class="toctree-l3" href="#6-right-after-execute-the-command">6. right after execute the command</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l2"><a href="#go-to-the-workbench-press-to-access-the-database-enter-your-password-and-be-happy">Go to the workbench press to access the database, enter your password and be happy!</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#create-new-user">Create new user</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../installing_postgresql/">Installing postgresql</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../server_python_HTTP/">simple command to start HTTP server with python</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../settings_vscode/">Settings of vscode for programming with VueJs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../useful_commands/">useful commands</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vi/">Comando Vim</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../xrandr_linux/">tidy linux screen resolution</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">MkLorum</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Installing Data-Base</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="installing-data-base">Installing Data-Base</h1>
+<h2 id="to-perform-database-installation">To perform database installation.</h2>
+<h2 id="1-installing-mysql-server">1. Installing mysql-server</h2>
+<pre><code>sudo apt install mysql-server
+</code></pre>
+
+<h2 id="2-installing-mysql-client">2. Installing mysql-client</h2>
+<pre><code>sudo apt install mysql-client
+</code></pre>
+
+<h2 id="3-intalling-mysql-workbench">3. Intalling mysql-workbench</h2>
+<pre><code>sudo apt install mysql-workbench
+</code></pre>
+
+<h2 id="5-after-installation-run-the-following-commands-on-the-terminal">5. after installation run the following commands on the terminal</h2>
+<pre><code>sudo mysql -u root -p
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '&lt;YourPassword&gt;'; flush privileges;
+</code></pre>
+
+<h2 id="6-right-after-execute-the-command">6. right after execute the command</h2>
+<pre><code>exit
+sudo service mysql restart
+</code></pre>
+
+<h1 id="go-to-the-workbench-press-to-access-the-database-enter-your-password-and-be-happy">Go to the workbench press to access the database, enter your password and be happy!</h1>
+<h2 id="create-new-user">Create new user</h2>
+<pre><code>create user &lt;name&gt;@'localhost' identified by 'password';
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../installing_postgresql/" class="btn btn-neutral float-right" title="Installing postgresql">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../git_push/" class="btn btn-neutral" title="Como usar o GitHub basico"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../git_push/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../installing_postgresql/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
