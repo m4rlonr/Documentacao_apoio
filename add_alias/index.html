@@ -36,7 +36,7 @@
     
     
       
-        <title>Add alias - Dados Marlon</title>
+        <title>Adicionar alias Linux - Dados Marlon</title>
       
     
     
@@ -85,7 +85,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#add-alias" tabindex="1" class="md-skip">
+      <a href="#adicionar-alias-linux" tabindex="1" class="md-skip">
         Ir para o conteúdo
       </a>
     
@@ -111,7 +111,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Add alias
+                Adicionar alias Linux
               
             </span>
           
@@ -232,6 +232,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../Usando_MarkDown/" title="Usando MarkDown para documentar" class="md-nav__link">
+      Usando MarkDown para documentar
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -242,8 +254,8 @@
       
     
     
-    <a href="./" title="Add alias" class="md-nav__link md-nav__link--active">
-      Add alias
+    <a href="./" title="Adicionar alias Linux" class="md-nav__link md-nav__link--active">
+      Adicionar alias Linux
     </a>
     
   </li>
@@ -267,8 +279,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../installing_mysql_data-base/" title="Installing Data-Base" class="md-nav__link">
-      Installing Data-Base
+    <a href="../installing_mysql_data-base/" title="Instalando Banco de dados Mysql" class="md-nav__link">
+      Instalando Banco de dados Mysql
     </a>
   </li>
 
@@ -279,8 +291,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../installing_postgresql/" title="Installing postgresql" class="md-nav__link">
-      Installing postgresql
+    <a href="../installing_postgresql/" title="Instalando Bando de Dados PostGres" class="md-nav__link">
+      Instalando Bando de Dados PostGres
     </a>
   </li>
 
@@ -291,8 +303,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../server_python_HTTP/" title="simple command to start HTTP server with python" class="md-nav__link">
-      simple command to start HTTP server with python
+    <a href="../mkdocs/" title="Usando MkDocs" class="md-nav__link">
+      Usando MkDocs
     </a>
   </li>
 
@@ -303,8 +315,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings_vscode/" title="Settings of vscode for programming with VueJs" class="md-nav__link">
-      Settings of vscode for programming with VueJs
+    <a href="../server_python_HTTP/" title="Comando simples para subir um servidor Python para teste" class="md-nav__link">
+      Comando simples para subir um servidor Python para teste
     </a>
   </li>
 
@@ -315,20 +327,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../usando_mkdocs/" title="Welcome to MkLorum" class="md-nav__link">
-      Welcome to MkLorum
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../useful_commands/" title="useful commands" class="md-nav__link">
-      useful commands
+    <a href="../settings_vscode/" title="Configurações do VScode para programar com Vue.Js" class="md-nav__link">
+      Configurações do VScode para programar com Vue.Js
     </a>
   </li>
 
@@ -351,8 +351,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../xrandr_linux/" title="tidy linux screen resolution" class="md-nav__link">
-      tidy linux screen resolution
+    <a href="../xrandr_linux/" title="Configurando resolução de segunda tela linux" class="md-nav__link">
+      Configurando resolução de segunda tela linux
     </a>
   </li>
 
@@ -387,15 +387,17 @@
                   <a href="https://github.com/M4rlon-R0drigues/edit/master/docs/add_alias.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="add-alias">Add alias</h1>
-<p>-&gt;To add an alias, you need to open the terminal and follow these steps:<br>
-<code>sudo nano /home/&lt;user&gt;/.bashrc</code></p>
-<p>In the file that was opened at the end we can see that there are already some aliases, just below them you can add your own aliases</p>
-<p>-&gt;Add an alias to the file:<br>
-<code>alias &lt;name_alias&gt;='&lt;command you want alias to execute&gt;'</code></p>
-<p>example:<br>
-<em><code>alias startall='sudo apt update &amp;&amp; sudo apt upgrade &amp;&amp; sudo apt install -f &amp;&amp; sudo apt autoremove &amp;&amp; sudo apt autoclean &amp;&amp; sudo apt install -f &amp;&amp; sudo snap refresh'</code></em></p>
-<p>-&gt;save the file</p>
+                <h1 id="adicionar-alias-linux">Adicionar alias Linux</h1>
+<p>Para adicionar alias é necessário que abra o termonal e execute o comando: </p>
+<pre><code>sudo nano /home/&lt;user&gt;/.bashrc
+</code></pre>
+<p>Navegue até o final do arquivo aberto e acione seu alias: </p>
+<pre><code>alias &lt;nome_do_alias&gt;='&lt;comando que você deseja realizar com alias&gt;'
+</code></pre>
+<p>Salve o arquivo com o comando: <code>Ctrl + o</code> e para sair <code>Ctrl + x</code></p>
+<p>Exemplo de alias pronto:</p>
+<pre><code>alias startall='sudo apt update &amp;&amp; sudo apt upgrade &amp;&amp; sudo apt install -f &amp;&amp; sudo apt autoremove &amp;&amp; sudo apt autoclean &amp;&amp; sudo apt install -f &amp;&amp; sudo snap refresh'
+</code></pre>
                 
                   
                 
@@ -417,7 +419,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Bem vindo!" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Usando_MarkDown/" title="Usando MarkDown para documentar" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -426,7 +428,7 @@
                 <span class="md-footer-nav__direction">
                   Anterior
                 </span>
-                Bem vindo!
+                Usando MarkDown para documentar
               </span>
             </div>
           </a>

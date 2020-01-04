@@ -36,7 +36,7 @@
     
     
       
-        <title>Settings of vscode for programming with VueJs - Dados Marlon</title>
+        <title>Configurações do VScode para programar com Vue.Js - Dados Marlon</title>
       
     
     
@@ -85,7 +85,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#settings-of-vscode-for-programming-with-vuejs" tabindex="1" class="md-skip">
+      <a href="#configuracoes-do-vscode-para-programar-com-vuejs" tabindex="1" class="md-skip">
         Ir para o conteúdo
       </a>
     
@@ -111,7 +111,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Settings of vscode for programming with VueJs
+                Configurações do VScode para programar com Vue.Js
               
             </span>
           
@@ -234,8 +234,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../add_alias/" title="Add alias" class="md-nav__link">
-      Add alias
+    <a href="../Usando_MarkDown/" title="Usando MarkDown para documentar" class="md-nav__link">
+      Usando MarkDown para documentar
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../add_alias/" title="Adicionar alias Linux" class="md-nav__link">
+      Adicionar alias Linux
     </a>
   </li>
 
@@ -258,8 +270,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../installing_mysql_data-base/" title="Installing Data-Base" class="md-nav__link">
-      Installing Data-Base
+    <a href="../installing_mysql_data-base/" title="Instalando Banco de dados Mysql" class="md-nav__link">
+      Instalando Banco de dados Mysql
     </a>
   </li>
 
@@ -270,8 +282,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../installing_postgresql/" title="Installing postgresql" class="md-nav__link">
-      Installing postgresql
+    <a href="../installing_postgresql/" title="Instalando Bando de Dados PostGres" class="md-nav__link">
+      Instalando Bando de Dados PostGres
     </a>
   </li>
 
@@ -282,8 +294,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../server_python_HTTP/" title="simple command to start HTTP server with python" class="md-nav__link">
-      simple command to start HTTP server with python
+    <a href="../mkdocs/" title="Usando MkDocs" class="md-nav__link">
+      Usando MkDocs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../server_python_HTTP/" title="Comando simples para subir um servidor Python para teste" class="md-nav__link">
+      Comando simples para subir um servidor Python para teste
     </a>
   </li>
 
@@ -302,34 +326,10 @@
       
     
     
-    <a href="./" title="Settings of vscode for programming with VueJs" class="md-nav__link md-nav__link--active">
-      Settings of vscode for programming with VueJs
+    <a href="./" title="Configurações do VScode para programar com Vue.Js" class="md-nav__link md-nav__link--active">
+      Configurações do VScode para programar com Vue.Js
     </a>
     
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../usando_mkdocs/" title="Welcome to MkLorum" class="md-nav__link">
-      Welcome to MkLorum
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../useful_commands/" title="useful commands" class="md-nav__link">
-      useful commands
-    </a>
   </li>
 
     
@@ -351,8 +351,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../xrandr_linux/" title="tidy linux screen resolution" class="md-nav__link">
-      tidy linux screen resolution
+    <a href="../xrandr_linux/" title="Configurando resolução de segunda tela linux" class="md-nav__link">
+      Configurando resolução de segunda tela linux
     </a>
   </li>
 
@@ -387,48 +387,58 @@
                   <a href="https://github.com/M4rlon-R0drigues/edit/master/docs/settings_vscode.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="settings-of-vscode-for-programming-with-vuejs">Settings of vscode for programming with VueJs</h1>
+                <h1 id="configuracoes-do-vscode-para-programar-com-vuejs">Configurações do VScode para programar com Vue.Js</h1>
 <ol>
-<li>Open vscode and type <code>shift + crtl + o</code> </li>
-<li>Erase everything I've been writing and write <code>&gt;Open settings (json)</code></li>
-<li>Now paste the settings and save
- <code>{
-    "workbench.colorTheme": "Origamid",
-    "editor.fontLigatures": true,
-    "vetur.format.defaultFormatter.js": "vscode-typescript",
-    // "vetur.format.defaultFormatter.html": "js-beautify-html",
-    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-    "eslint.autoFixOnSave": true,
-    "eslint.validate": [
-        {
-            "language": "vue",
-            "autoFix": true
-        },
-        {
-            "language": "html",
-            "autoFix": true
-        },
-        {
-            "language": "javascript",
-            "autoFix": true
-        }
-    ],
-    "editor.suggestSelection": "first",
-    "workbench.iconTheme": "vscode-icons",
-    "editor.rulers": [
-        80,
-        120
-    ],
-    "terminal.integrated.fontSize": 14,
-    "breadcrumbs.enabled": true,
-    "editor.parameterHints.enabled": false,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+<li>
+<p>Abra o VScode e baixe as exteções do Prettier e ESLint</p>
+</li>
+<li>
+<p>Após baixar as extensões aperte as seguintes teclas:<br><code>shift + crtl + o</code> </p>
+</li>
+<li>
+<p>Apague o que tiver escrito na barra e digite:<br><code>&gt;Open settings (json)</code></p>
+</li>
+<li>
+<p>Agora cole as seguinte configurações:</p>
+<pre><code>{
+"workbench.colorTheme": "Origamid",
+"editor.fontLigatures": true,
+"vetur.format.defaultFormatter.js": "vscode-typescript",
+// "vetur.format.defaultFormatter.html": "js-beautify-html",
+"javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+"eslint.autoFixOnSave": true,
+"eslint.validate": [
+    {
+        "language": "vue",
+        "autoFix": true
     },
-    "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 0,
-    "git.enableSmartCommit": true
-}</code></li>
+    {
+        "language": "html",
+        "autoFix": true
+    },
+    {
+        "language": "javascript",
+        "autoFix": true
+    }
+],
+"editor.suggestSelection": "first",
+"workbench.iconTheme": "vscode-icons",
+"editor.rulers": [
+    80,
+    120
+],
+"terminal.integrated.fontSize": 14,
+"breadcrumbs.enabled": true,
+"editor.parameterHints.enabled": false,
+"editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+},
+"workbench.startupEditor": "newUntitledFile",
+"window.zoomLevel": 0,
+"git.enableSmartCommit": true
+}
+</code></pre>
+</li>
 </ol>
                 
                   
@@ -451,7 +461,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../server_python_HTTP/" title="simple command to start HTTP server with python" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../server_python_HTTP/" title="Comando simples para subir um servidor Python para teste" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -460,19 +470,19 @@
                 <span class="md-footer-nav__direction">
                   Anterior
                 </span>
-                simple command to start HTTP server with python
+                Comando simples para subir um servidor Python para teste
               </span>
             </div>
           </a>
         
         
-          <a href="../usando_mkdocs/" title="Welcome to MkLorum" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../vi/" title="Comando Vim" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Próximo
                 </span>
-                Welcome to MkLorum
+                Comando Vim
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
