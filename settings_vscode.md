@@ -9,8 +9,9 @@
 3. Agora cole as seguinte configurações:
 
         {
-        "workbench.colorTheme": "Origamid",
+        "workbench.colorTheme": "Dracula",
         "editor.fontLigatures": true,
+        "editor.formatOnSave": true,
         "vetur.format.defaultFormatter.js": "vscode-typescript",
         // "vetur.format.defaultFormatter.html": "js-beautify-html",
         "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
@@ -30,7 +31,7 @@
             }
         ],
         "editor.suggestSelection": "first",
-        "workbench.iconTheme": "vscode-icons",
+        "workbench.iconTheme": "material-icon-theme",
         "editor.rulers": [
             80,
             120
