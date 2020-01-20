@@ -36,7 +36,7 @@
     
     
       
-        <title>Configurando resolução de segunda tela linux - Dados Marlon</title>
+        <title>Verificando processos em aberto maquina linux - Dados Marlon</title>
       
     
     
@@ -110,7 +110,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#configurando-resolucao-de-segunda-tela-linux" tabindex="1" class="md-skip">
+      <a href="#verificando-processos-em-aberto-maquina-linux" tabindex="1" class="md-skip">
         Ir para o conteúdo
       </a>
     
@@ -136,7 +136,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Configurando resolução de segunda tela linux
+                Verificando processos em aberto maquina linux
               
             </span>
           
@@ -395,11 +395,49 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../verificando_processos_maquina_linux/" title="Verificando processos em aberto maquina linux" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Verificando processos em aberto maquina linux
+      </label>
+    
+    <a href="./" title="Verificando processos em aberto maquina linux" class="md-nav__link md-nav__link--active">
       Verificando processos em aberto maquina linux
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#verificando-e-encerrando-processos" class="md-nav__link">
+    Verificando e encerrando processos
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -419,56 +457,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Configurando resolução de segunda tela linux
-      </label>
-    
-    <a href="./" title="Configurando resolução de segunda tela linux" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../xrandr_linux/" title="Configurando resolução de segunda tela linux" class="md-nav__link">
       Configurando resolução de segunda tela linux
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Índice</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#script-para-forcar-a-resolucao-de-um-monitor-no-linux" class="md-nav__link">
-    Script para forçar a resolução de um monitor no Linux
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exemplo-de-script-pronto" class="md-nav__link">
-    Exemplo de script pronto
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -493,15 +486,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#script-para-forcar-a-resolucao-de-um-monitor-no-linux" class="md-nav__link">
-    Script para forçar a resolução de um monitor no Linux
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exemplo-de-script-pronto" class="md-nav__link">
-    Exemplo de script pronto
+  <a href="#verificando-e-encerrando-processos" class="md-nav__link">
+    Verificando e encerrando processos
   </a>
   
 </li>
@@ -522,52 +508,43 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/M4rlon-R0drigues/edit/master/docs/xrandr_linux.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/M4rlon-R0drigues/edit/master/docs/verificando_processos_maquina_linux.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="configurando-resolucao-de-segunda-tela-linux">Configurando resolução de segunda tela linux</h1>
-<h3 id="script-para-forcar-a-resolucao-de-um-monitor-no-linux">Script para forçar a resolução de um monitor no Linux</h3>
+                <h1 id="verificando-processos-em-aberto-maquina-linux">Verificando processos em aberto maquina linux</h1>
+<h3 id="verificando-e-encerrando-processos">Verificando e encerrando processos</h3>
+<p>Há vezes que a maquina apresenta certa lentidão e por isso é legal saber verificar se isso pode estarsendo causado por algum outro programa que esteja sendo executado na maquina</p>
 <ol>
 <li>
-<p>Abra o terminal e digite o comando:</p>
-<pre><code>cvt &lt;Sua_Resolução&gt; 60
+<p>Comando para listar os processos:</p>
+<pre><code>sudo systemctl list-unit-files --type service --all
 </code></pre>
 </li>
 <li>
-<p>Você recebera uma resolução como essa:</p>
-<blockquote>
-<p><Sua_Resolução> 51.40 Hz (CVT) hsync: 3.91 kHz; pclk: 7.00 MHz<br />
-Modeline "<Sua_Resolução>_60.00"    7.00  1440 1480 1616 1792  60 63 73 76 -hsync +vsync</p>
-</blockquote>
-</li>
-<li>
-<p>Agora para o proximo comando copie tudo após o "Modeline" e execute o comando:</p>
-<pre><code>xrandr --newmode &lt;tudo_depois_do_modeline&gt;
+<p>Listando serviços usando filtros<br />
+    Serviços ativos:</p>
+<pre><code>sudo sudo systemctl list-unit-files --type service --all | egrep enabled
 </code></pre>
-<p>Exemplo:</p>
-<pre><code>xrandr --newmode "&lt;Sua_Resolução&gt;_60.00"  106.50  1440 1528 1672 1904  900 903 909 934 -hsync +vsync
+<p>Serviços desativados:</p>
+<pre><code>sudo sudo systemctl list-unit-files --type service --all | egrep disabled
 </code></pre>
-</li>
-<li>
-<p>Execute o addmode e na porta desejada podendo ser a VGA, HDMI ou DP:</p>
-<pre><code>xrandr --addmode &lt;porta&gt; &lt;Sua_Resolução&gt;_60.00
+<p>Verificar status do serviço:</p>
+<pre><code>sudo systemctl status &lt;nome_serviço&gt;
+</code></pre>
+<p>Patando o serviço:</p>
+<pre><code>sudo systemctl stop &lt;nome_serviço&gt;
 </code></pre>
 </li>
 <li>
-<p>O ultimo comando para instalar a configuração de saida de video:</p>
-<pre><code>xrandr --output &lt;porta&gt; --mode &lt;Sua_Resolução&gt;_60.00
+<p>Desativando e ativando serviço<br />
+    Para ativar usamos o comando:</p>
+<pre><code>sudo systemctl enabled &lt;nome_serviço&gt;
 </code></pre>
-<hr />
-<h3 id="exemplo-de-script-pronto">Exemplo de script pronto</h3>
-<pre><code>#/bin/bash
-cvt 1440 900 60
-xrandr --newmode "1440x900_60.00"  106.50  1440 1528 1672 1904  900 903 909 934 -hsync +vsync
-xrandr --addmode DP-1 1440x900_60.00
-xrandr --output DP-1 --mode 1440x900_60.00
+<p>Para desativar usamos o comando:</p>
+<pre><code>sudo systemctl disable &lt;nome_serviço&gt;
 </code></pre>
 </li>
 </ol>
-<p>Observação:  para que quando você reinicie seu computador e tenha que refazer todos esse passo crie um arquivo e coloque o nome do mesmo com extensão ".sh" e vá nas configurações de inicialização automatica do linux e adicione esse arquivo para que sempre que seu computador inicie o script rode e sua resolução seja ajustado.</p>
                 
                   
                 
@@ -589,7 +566,7 @@ xrandr --output DP-1 --mode 1440x900_60.00
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../vi/" title="Comando Vim" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../settings_vscode/" title="Configurações do VScode para programar com Vue.Js" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -598,11 +575,25 @@ xrandr --output DP-1 --mode 1440x900_60.00
                 <span class="md-footer-nav__direction">
                   Anterior
                 </span>
-                Comando Vim
+                Configurações do VScode para programar com Vue.Js
               </span>
             </div>
           </a>
         
+        
+          <a href="../vi/" title="Comando Vim" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                Comando Vim
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>

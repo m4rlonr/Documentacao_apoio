@@ -17,7 +17,7 @@
       
         <meta name="lang:clipboard.copied" content="Copiado para área de transferência">
       
-        <meta name="lang:search.language" content="en, pt">
+        <meta name="lang:search.language" content="pt">
       
         <meta name="lang:search.pipeline.stopwords" content="True">
       
@@ -64,6 +64,31 @@
     
     
     
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-36723568-3", "mkdocs.org")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
     
@@ -176,6 +201,48 @@
       
         
       
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." class="md-tabs__link md-tabs__link--active">
+        Bem vindo!
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
       
       <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
@@ -291,6 +358,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#criando-acesso-ssh-no-github" class="md-nav__link">
+    Criando acesso SSH no GitHub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usando-ssh-em-seu-repositorio" class="md-nav__link">
+    Usando SSH em seu repositório
+  </a>
+  
+</li>
+      
       
       
       
@@ -368,6 +449,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../verificando_processos_maquina_linux/" title="Verificando processos em aberto maquina linux" class="md-nav__link">
+      Verificando processos em aberto maquina linux
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../vi/" title="Comando Vim" class="md-nav__link">
       Comando Vim
     </a>
@@ -413,6 +506,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#criando-acesso-ssh-no-github" class="md-nav__link">
+    Criando acesso SSH no GitHub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usando-ssh-em-seu-repositorio" class="md-nav__link">
+    Usando SSH em seu repositório
+  </a>
+  
+</li>
+      
       
       
       
@@ -440,6 +547,24 @@
 <pre><code>sudo apt install git
 </code></pre>
 </li>
+<li>
+<p>Com git instalado agora precisa definir usuario e email(opcional)</p>
+</li>
+<li>
+<p>Opção 1 - Sem fornecer senha:<br />
+   Definindo Usuario:</p>
+<pre><code>git config --global user.name "nome_usuario_github"
+</code></pre>
+</li>
+</ol>
+<p>Definindo Email:</p>
+<pre><code>    git config --global user.email "email_github"
+</code></pre>
+<p>Verificar se foi devidamento definido basta exercutarmos os comandos:</p>
+<pre><code>    git config user.name
+    git config user.email
+</code></pre>
+<ol>
 <li>
 <p>Agora clone o repositório onde estão os dados que deseja usando o comando:</p>
 <pre><code>git clone &lt;endereço_HTTP&gt;
@@ -479,9 +604,70 @@
 </code></pre>
 </li>
 <li>
+<p>Comando úteis para usar caso necessario<br />
+    Verificar se o diretório local esta sincronizado com dirretório do Gitub usamos o comando:</p>
+<pre><code>git pull origin master
+</code></pre>
+<p>Para remover um arquivo de diretório localmente e sincronizar usamos o comando:</p>
+<pre><code>git rm -r &lt;nome__arquivo&gt;
+</code></pre>
+<p>Apos é necessario fazer o mesmo processo de push para que o arquivo seja remoovido também no repositório do GitHub</p>
+</li>
+<li>
 <p>Para finalizar infome seu usuario e senha do GitHub para que eja feita a autenticação e seja feliz!</p>
 </li>
 </ol>
+<h3 id="criando-acesso-ssh-no-github">Criando acesso SSH no GitHub</h3>
+<p>Para criar o acesso é necessario verificar esta instalado o <code>openssh-client</code>, ele lhe dira se esta instalado e logo após verificar se ja foram criadas chave ssh com o comando <code>ls -al ~/.ssh</code> e caso haja bastas executar o comando <code>cat ~/.ssh/id_rsa.pub</code>, copiar e colar no GitHub e depois testar a conexão, que será feito nos próximos passos!</p>
+<p>Caso não tenha nenhuma chava é necessário criar com o seguintes passo:</p>
+<ol>
+<li>
+<p>Abra o terminal e digite o comando</p>
+<pre><code>ssh-keygen -t rsa -b 4096 -C "seu_email@example.com"
+</code></pre>
+<p>Troque o local indicado pelo email da sua conta do GitHub e <strong>nos próximos dois passos caso queira deixar em branco só aperte enter</strong></p>
+</li>
+<li>
+<p>Agora vamos adicionar a agenda com o comando</p>
+<pre><code>    eval "$(ssh-agent -s)"
+</code></pre>
+<p>Pronto o que deveria ser feito no terminal está pronto agora devemos ir ao GitHub e executar os seguintes passos:</p>
+</li>
+<li>
+<p>executar o comando <code>cat ~/.ssh/id_rsa.pub</code> para vermos a chave e copiala para colar no GitHub.</p>
+</li>
+<li>
+<p>No canto superior direito de qualquer página, clique na foto do seu perfil e clique:</p>
+<pre><code>Configurações -&gt; SSH and GPG keys -&gt; New SSH key ou Add SSH key
+</code></pre>
+<p>De um titulo e abaixo cole sua chave que você copiou com o comando <code>cat ~/.ssh/id_rsa.pub</code></p>
+</li>
+<li>
+<p>Confirme sua senha do GitHub e agora teste a conexão com o terminal com um simples comando:</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+<p>Esse comando lhe repondera com uma mensagem dizendo que foi um sucesso a autenticação.</p>
+</li>
+</ol>
+<h3 id="usando-ssh-em-seu-repositorio">Usando SSH em seu repositório</h3>
+<p>Caso você não tenha os repositórios em sua maquina e deseja acionar em sua maquina bastas ir no seu repositório do GitHub e clicar em clonar e escolher a opção SSH e o comando para clonar deverá ficar paracido com o seguinte comando:</p>
+<pre><code>    git@github.com:&lt;usuario&gt;/&lt;diretório&gt;
+</code></pre>
+<p>Seguindo esses passos você poderá usar tranquilamente o ssh sem problomas!</p>
+<p>Se já esta com o repositório em sua maquina e usou o HTTP é necessario remover o vinculo com o HTTP usando o comando:</p>
+<pre><code>    git remote rm origin
+</code></pre>
+<p>e então adicionar o vinculo com o SSH usando o comando:</p>
+<pre><code>    git remote add origin git@github.com:&lt;usuario&gt;/&lt;repositório&gt;
+</code></pre>
+<p>Assim o vinculo será feito com o SSH e você podera usar tranquilamente o ssh em um diretório ja existente em sua maquina.</p>
+<p>Referências:<br />
+<a href="https://fellipe.com/blog/definindo-configuracoes-do-gitconfig-apos-a-instalacao-do-git/">Alterando arquivo '.gitconfig'</a><br />
+<a href="https://stackoverflow.com/questions/35942754/how-to-save-username-and-password-in-git">Opção salvando senha</a><br />
+<a href="https://git-scm.com/docs/git-credential-store">Documentação credencial store</a>
+<a href="https://help.github.com/pt/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">Criar nova chave ssh e adicionando a agenta</a><br />
+<a href="https://stackoverflow.com/questions/33880832/github-ssh-key-claiming-it-is-not-used">Quando a primeira conexão foi feita com http</a><br />
+<a href="https://help.github.com/pt/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account">Adicionando chave ao GitHub</a></p>
                 
                   
                 
@@ -560,16 +746,12 @@
           <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
           
             
-          
-            
               
               
                 <script src="../assets/javascripts/lunr/lunr.pt.js"></script>
               
             
           
-          
-            <script src="../assets/javascripts/lunr/lunr.multi.js"></script>
           
         
       

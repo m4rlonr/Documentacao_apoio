@@ -17,7 +17,7 @@
       
         <meta name="lang:clipboard.copied" content="Copiado para área de transferência">
       
-        <meta name="lang:search.language" content="en, pt">
+        <meta name="lang:search.language" content="pt">
       
         <meta name="lang:search.pipeline.stopwords" content="True">
       
@@ -64,6 +64,31 @@
     
     
     
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-36723568-3", "mkdocs.org")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
     
@@ -176,6 +201,48 @@
       
         
       
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." class="md-tabs__link md-tabs__link--active">
+        Bem vindo!
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
       
       <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
@@ -365,6 +432,18 @@
   <li class="md-nav__item">
     <a href="../settings_vscode/" title="Configurações do VScode para programar com Vue.Js" class="md-nav__link">
       Configurações do VScode para programar com Vue.Js
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../verificando_processos_maquina_linux/" title="Verificando processos em aberto maquina linux" class="md-nav__link">
+      Verificando processos em aberto maquina linux
     </a>
   </li>
 
@@ -565,16 +644,12 @@
           <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
           
             
-          
-            
               
               
                 <script src="../assets/javascripts/lunr/lunr.pt.js"></script>
               
             
           
-          
-            <script src="../assets/javascripts/lunr/lunr.multi.js"></script>
           
         
       
