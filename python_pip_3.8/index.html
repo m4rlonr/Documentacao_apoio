@@ -36,7 +36,7 @@
     
     
       
-        <title>Adicionar alias Linux - Dados Marlon</title>
+        <title>Instalar python3.8 e pip - Dados Marlon</title>
       
     
     
@@ -110,7 +110,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#adicionar-alias-linux" tabindex="0" class="md-skip">
+      <a href="#instalar-python38-e-pip" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -136,7 +136,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Adicionar alias Linux
+                Instalar python3.8 e pip
               
             </span>
           
@@ -269,20 +269,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Adicionar alias Linux" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../add_alias/" title="Adicionar alias Linux" class="md-nav__link">
       Adicionar alias Linux
     </a>
-    
   </li>
 
     
@@ -362,11 +353,70 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../python_pip_3.8/" title="Instalar python3.8 e pip" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Instalar python3.8 e pip
+      </label>
+    
+    <a href="./" title="Instalar python3.8 e pip" class="md-nav__link md-nav__link--active">
       Instalar python3.8 e pip
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definir-ptyhon38-como-padrao-necessario-alterar-o-arquivo-bashrc-ou-zshrc-no-final-do-arquivo-adicionar" class="md-nav__link">
+    Definir ptyhon3.8 como padrão necessario alterar o arquivo ~/.bashrc ou ~/.zshrc no final do arquivo adicionar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atualizar-o-pip" class="md-nav__link">
+    Atualizar o Pip
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-ferramentas-mais-recentes-python" class="md-nav__link">
+    Instalar ferramentas mais recentes python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desistalar" class="md-nav__link">
+    Desistalar
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -447,6 +497,43 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definir-ptyhon38-como-padrao-necessario-alterar-o-arquivo-bashrc-ou-zshrc-no-final-do-arquivo-adicionar" class="md-nav__link">
+    Definir ptyhon3.8 como padrão necessario alterar o arquivo ~/.bashrc ou ~/.zshrc no final do arquivo adicionar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atualizar-o-pip" class="md-nav__link">
+    Atualizar o Pip
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-ferramentas-mais-recentes-python" class="md-nav__link">
+    Instalar ferramentas mais recentes python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desistalar" class="md-nav__link">
+    Desistalar
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -457,19 +544,28 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/M4rlon-R0drigues/edit/master/docs/add_alias.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/M4rlon-R0drigues/edit/master/docs/python_pip_3.8.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="adicionar-alias-linux">Adicionar alias Linux</h1>
-<p>Para adicionar alias é necessário que abra o termonal e execute o comando: </p>
-<pre><code>sudo nano /home/&lt;user&gt;/.bashrc
+                <h1 id="instalar-python38-e-pip">Instalar python3.8 e pip</h1>
+<p>sudo apt install python3.8 python3.8-venv python3-pip</p>
+<h3 id="definir-ptyhon38-como-padrao-necessario-alterar-o-arquivo-bashrc-ou-zshrc-no-final-do-arquivo-adicionar">Definir ptyhon3.8 como padrão necessario alterar o arquivo <code>~/.bashrc</code> ou <code>~/.zshrc</code> no final do arquivo adicionar</h3>
+<pre><code>    alias python='python3.8'
+    alias pip='python -m pip'
 </code></pre>
-<p>Navegue até o final do arquivo aberto e acione seu alias: </p>
-<pre><code>alias &lt;nome_do_alias&gt;='&lt;comando que você deseja realizar com alias&gt;'
+<h3 id="atualizar-o-pip">Atualizar o Pip</h3>
+<p>Para atualizar o pip apos ter criados os alias basta executar o comando</p>
+<pre><code>    pip install -U pip
 </code></pre>
-<p>Salve o arquivo com o comando: <code>Ctrl + o</code> e para sair <code>Ctrl + x</code></p>
-<p>Exemplo de alias pronto:</p>
-<pre><code>alias startall='sudo apt update &amp;&amp; sudo apt upgrade &amp;&amp; sudo apt install -f &amp;&amp; sudo apt autoremove &amp;&amp; sudo apt autoclean &amp;&amp; sudo apt install -f &amp;&amp; sudo snap refresh'
+<h3 id="instalar-ferramentas-mais-recentes-python">Instalar ferramentas mais recentes python</h3>
+<pre><code>    python3.8 -m pip install -U setuptools
+</code></pre>
+<h2 id="desistalar">Desistalar</h2>
+<p>Para desinstalar basta remover o python3.8 com o comando:</p>
+<pre><code>    sudo apt remove python3.8
+</code></pre>
+<p>se quiser fazer uma remoção ainda maior (não recomendo) basta executar o comando:</p>
+<pre><code>    sudo apt purge python3.8
 </code></pre>
                 
                   
@@ -492,7 +588,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../Usando_MarkDown/" title="Usando MarkDown para documentar" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../mkdocs/" title="Usando MkDocs" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -501,19 +597,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Usando MarkDown para documentar
+                Usando MkDocs
               </span>
             </div>
           </a>
         
         
-          <a href="../git_push/" title="Como usar o GitHub basico" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../server_python_HTTP/" title="Comando simples para subir um servidor Python para teste" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Como usar o GitHub basico
+                Comando simples para subir um servidor Python para teste
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
