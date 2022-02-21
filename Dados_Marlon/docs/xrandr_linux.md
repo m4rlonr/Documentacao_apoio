@@ -1,6 +1,7 @@
-# Configurando resolução de segunda tela linux
+<h1> Configurando resolução de segunda tela linux</h1>
+---
 
-### Script para forçar a resolução de um monitor no Linux
+## Script para forçar a resolução de um monitor no Linux
 
 1. Abra o terminal e digite o comando:
 
@@ -27,7 +28,8 @@
 
         xrandr --output <porta> --mode <Sua_Resolução>_60.00
 ---
-### Exemplo de script pronto
+
+## Exemplo de script pronto
 
         #/bin/bash
         cvt 1440 900 60

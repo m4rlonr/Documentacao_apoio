@@ -1,35 +1,36 @@
-# Verificando processos em aberto maquina linux
+<h1> Verificando processos em aberto maquina linux </h1>
+---
 
-### Verificando e encerrando processos
+## Verificando e encerrando processos
 
 Há vezes que a maquina apresenta certa lentidão e por isso é legal saber verificar se isso pode estarsendo causado por algum outro programa que esteja sendo executado na maquina
 
-1.  Comando para listar os processos:
+##  Comando para listar os processos:
 
-        sudo systemctl list-unit-files --type service --all
+    sudo systemctl list-unit-files --type service --all
 
-1.  Listando serviços usando filtros  
-    Serviços ativos:
+##  Listando serviços usando filtros  
+Serviços ativos:
 
-        sudo sudo systemctl list-unit-files --type service --all | egrep enabled
+    sudo sudo systemctl list-unit-files --type service --all | egrep enabled
 
-    Serviços desativados:
+Serviços desativados:
 
-        sudo sudo systemctl list-unit-files --type service --all | egrep disabled
+    sudo sudo systemctl list-unit-files --type service --all | egrep disabled
 
-    Verificar status do serviço:
+Verificar status do serviço:
 
-        sudo systemctl status <nome_serviço>
+    sudo systemctl status <nome_serviço>
 
-    Patando o serviço:
+Patando o serviço:
 
-        sudo systemctl stop <nome_serviço>
+    sudo systemctl stop <nome_serviço>
 
-1.  Desativando e ativando serviço  
-    Para ativar usamos o comando:
+##  Desativando e ativando serviço  
+Para ativar usamos o comando:
 
-        sudo systemctl enabled <nome_serviço>
+    sudo systemctl enabled <nome_serviço>
 
-    Para desativar usamos o comando:
+Para desativar usamos o comando:
 
-        sudo systemctl disable <nome_serviço>
+    sudo systemctl disable <nome_serviço>

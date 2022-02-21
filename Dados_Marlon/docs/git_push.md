@@ -1,6 +1,6 @@
-# Como usar o GitHub basico
+<h1> Como usar o GitHub basico</h1>
 
-### Passos
+## Passos
 
 1.  Primeiro é necessario instalar o Git, para isso basta abrir o terminal e executar o seguinte comando:
 
@@ -69,7 +69,7 @@
 
 9.  Para finalizar infome seu usuario e senha do GitHub para que eja feita a autenticação e seja feliz!
 
-### Criando acesso SSH no GitHub
+## Criando acesso SSH no GitHub
 
 Para criar o acesso é necessario verificar esta instalado o `openssh-client`, ele lhe dira se esta instalado e logo após verificar se ja foram criadas chave ssh com o comando `ls -al ~/.ssh` e caso haja bastas executar o comando `cat ~/.ssh/id_rsa.pub`, copiar e colar no GitHub e depois testar a conexão, que será feito nos próximos passos!
 
@@ -100,7 +100,7 @@ Caso não tenha nenhuma chava é necessário criar com o seguintes passo:
 
     Esse comando lhe repondera com uma mensagem dizendo que foi um sucesso a autenticação.
 
-### Usando SSH em seu repositório
+## Usando SSH em seu repositório
 
 Caso você não tenha os repositórios em sua maquina e deseja acionar em sua maquina bastas ir no seu repositório do GitHub e clicar em clonar e escolher a opção SSH e o comando para clonar deverá ficar paracido com o seguinte comando:
 
