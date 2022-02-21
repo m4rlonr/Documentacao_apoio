@@ -10,5 +10,5 @@
 	Página em contante atualização.  
 </p>
 <p>
-	Ultima atualização 20 de Fevereiro de 2022.
+	Última atualização 20 de Fevereiro de 2022.
 </p>

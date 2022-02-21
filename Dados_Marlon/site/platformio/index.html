@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Settings vscode - Documentação</title>
+        <title>Platformio - Documentação</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -53,7 +53,7 @@
 </li>
                                     
 <li>
-    <a href="../platformio/" class="dropdown-item">Platformio</a>
+    <a href="./" class="dropdown-item active">Platformio</a>
 </li>
                                     
 <li>
@@ -61,7 +61,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Settings vscode</a>
+    <a href="../settings_vscode/" class="dropdown-item">Settings vscode</a>
 </li>
                                     
 <li>
@@ -115,17 +115,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../server_python_HTTP/" class="nav-link">
+                                <a rel="prev" href="../mkdocs/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../Usando_MarkDown/" class="nav-link">
+                                <a rel="next" href="../server_python_HTTP/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/m4rlonr/edit/master/docs/settings_vscode.md" class="nav-link">Edit on m4rlonr</a>
+                                <a href="https://github.com/m4rlonr/edit/master/docs/platformio.md" class="nav-link">Edit on m4rlonr</a>
                             </li>
                     </ul>
                 </div>
@@ -145,12 +145,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#preparo" class="nav-link">Preparo</a>
+            <li class="nav-item" data-level="2"><a href="#instalacao-platformio" class="nav-link">Instalação PlatformIo</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#configurando" class="nav-link">Configurando</a>
+            <li class="nav-item" data-level="2"><a href="#instalacao-de-linux-development-tools" class="nav-link">Instalação de "Linux development tools"</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#uinstalacao-de-vcpkg" class="nav-link">UInstalação de "vcpkg"</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -159,68 +164,23 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1> Configurações do VScode para programar com Vue.Js</h1>
+<h1> Instalação do PlatformIo para Linux </h1>
 <hr />
-<h2 id="preparo">Preparo</h2>
-<ol>
-<li>
-<p>Abra o VScode e baixe as exteções do Prettier e ESLint</p>
-</li>
-<li>
-<p>Após baixar as extensões aperte as seguintes teclas:<br><code>shift + crtl + o</code></p>
-</li>
-<li>
-<p>Apague o que tiver escrito na barra e digite:<br><code>&gt;Open settings (json)</code></p>
-</li>
-</ol>
-<h2 id="configurando">Configurando</h2>
-<ol>
-<li>Agora cole as seguinte configurações:<pre><code>{
-//Configurações Marlon
-"workbench.colorTheme": "Dracula",
-"editor.fontFamily": "Fira Code",
-"editor.fontSize": 14,
-"editor.suggestSelection": "first",
-"workbench.iconTheme": "material-icon-theme",
-"editor.fontLigatures": true,
-//
-//Configurações para trabalhar com VueJs
-"editor.formatOnSave": true,
-"vetur.format.defaultFormatter.js": "vscode-typescript",
-// "vetur.format.defaultFormatter.html": "js-beautify-html",
-"javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-"eslint.autoFixOnSave": false,
-"eslint.validate": [
-  {
-    "language": "vue",
-    "autoFix": true
-  },
-  {
-    "language": "html",
-    "autoFix": true
-  },
-  {
-    "language": "javascript",
-    "autoFix": true
-  }
-],
-"editor.rulers": [
-  80,
-  120
-],
-"terminal.integrated.fontSize": 14,
-"breadcrumbs.enabled": true,
-"editor.parameterHints.enabled": false,
-"editor.codeActionsOnSave": {
-  "source.fixAll.eslint": false
-},
-"workbench.startupEditor": "newUntitledFile",
-"window.zoomLevel": 0,
-"git.enableSmartCommit": true
-}
+<h2 id="instalacao-platformio">Instalação PlatformIo</h2>
+<p>Abrir vscode e tecle "ctrl+shift+x" e digite <code>platformio</code> e baixe o PlatformIo IDE</p>
+<h2 id="instalacao-de-linux-development-tools">Instalação de "Linux development tools"</h2>
+<p>executar os seguintes comandos:</p>
+<pre><code>    sudo apt-get update
+    sudo apt-get install build-essential tar curl zip unzip
 </code></pre>
-</li>
-</ol></div>
+<h2 id="uinstalacao-de-vcpkg">UInstalação de "vcpkg"</h2>
+<p>execute os seguintes comandos:</p>
+<pre><code>    cd /tmp/
+    git clone https://github.com/microsoft/vcpkg
+    cd vcpkg/
+    ./bootstrap-vcpkg.sh
+</code></pre>
+<p>Remoção e atualização basta seguir a <a href="https://docs.microsoft.com/en-us/cpp/build/install-vcpkg?view=msvc-160&amp;tabs=linux">documentação</a> oficial.</p></div>
             </div>
         </div>
 

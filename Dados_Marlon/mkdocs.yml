@@ -20,15 +20,9 @@ nav:
         - 'installing_postgresql.md'
         - 'install_psycopg2.md'
         - 'xrandr_linux.md'
-palette:
-    primary: 'teal'
-    accent: 'blue'
-font:
-    text: 'Ubuntu'
-    code: 'Ubuntu Mono'
-logo:
-    icon: 'important_devices'
-language: 'pt'
+extra:
+  search:
+  language: 'en, pt'
 repo_name: 'm4rlonr'
 repo_url: 'https://github.com/m4rlonr'
 #google_analytics: ['UA-36723568-3', 'mkdocs.org']
