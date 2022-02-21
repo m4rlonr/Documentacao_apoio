@@ -1,13 +1,14 @@
-# Instalação de Vuejs CLI e Vuetify
+<h1> Instalação de Vuejs CLI e Vuetify </h1>
+---
 
-### Instalação de Vuejs(2)
+## Instalação de Vuejs(2)
 Para executar a instalação é necessário executar o comando a seguir no terminal:
 
 
     sudo npm install -g @vue/cli @vue/cli-service-global
 
 
-### Criação de projeto
+## Criação de projeto
 Com a ionstalação do Vuejs é possível criar um projeto com o comando a seguir sendo executado no terminal:
 
     vue create <SeuProjeto>
@@ -18,7 +19,7 @@ Com a ionstalação do Vuejs é possível criar um projeto com o comando a segui
     npm run serve
   Se os passos anteriores foram realizados com sucesso será aberta a página de apresentação do Vuejs.
 
-### Instalação do vuetify
+## Instalação do vuetify
 O Vuetify é uma framework que auxilia na criação de layouts de um projeto vue e para o instalar ainda dentro da pasta do projeto basta executar o comando:
 
 

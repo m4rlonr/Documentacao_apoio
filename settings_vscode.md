@@ -1,11 +1,14 @@
-# Configurações do VScode para programar com Vue.Js
+<h1> Configurações do VScode para programar com Vue.Js</h1>
+---
 
+## Preparo
 1.  Abra o VScode e baixe as exteções do Prettier e ESLint
 
 1.  Após baixar as extensões aperte as seguintes teclas:<br>`shift + crtl + o`
 
 1.  Apague o que tiver escrito na barra e digite:<br>`>Open settings (json)`
 
+## Configurando
 1.  Agora cole as seguinte configurações:
 
         {

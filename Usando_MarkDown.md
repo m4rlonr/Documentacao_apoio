@@ -10,11 +10,11 @@ Referências:<br>
 
 ---
 
-### 1. Para titulos se usa o Sharp que vai do H1 ao H6:
+## Para titulos se usa o Sharp que vai do H1 ao H6:
 
-# H1
+ H1
 
-###### H6
+#### H6
 
 ---
 
@@ -27,7 +27,7 @@ tres crase já é usado para um bloco de códico com várias linhas
 
 ---
 
-### Formatação basica de texto
+## Formatação basica de texto
 
 Uso do Asterisco podemos usar Negrito, Italico e também os dois juntos:
 
@@ -37,13 +37,13 @@ _Um asterisco deixa a letra em italico_
 
 ---
 
-### Quebra de linha
+## Quebra de linha
 
 Quebra de Linha em MarkDown é simples bastas usar dois espaços consecutivos!
 
 ---
 
-### Criando citaçao
+## Criando citaçao
 
 Citação em MarkDown é simples de se fazer basta acrescentar no começo da citaação um ">", lembrando que as citações podem conter elementos MarkDown como titulos, sublinhados e etc:
 
@@ -53,7 +53,7 @@ Citação em MarkDown é simples de se fazer basta acrescentar no começo da cit
 
 ---
 
-### Usar listas
+## Usar listas
 
 O MarkDown suporta listas ordenadas e não ordenadas.
 
@@ -71,7 +71,7 @@ Caso necessário usar uma data e ela seja reconhecida como uma lista apenas adic
 
 ---
 
-### Criando blocos de códigos
+## Criando blocos de códigos
 
 Para criar um bloco de código basta usar 4 espaços ou uma tabulação, assim você pode adicionar varias linhas de código como no exemplo abaixo:
 
@@ -81,7 +81,7 @@ Para criar um bloco de código basta usar 4 espaços ou uma tabulação, assim v
 
 ---
 
-### Regra Horizontal
+## Regra Horizontal
 
 mais conhecida como Linha Horizontal, pode ser muito útil e pode ser criada de varias formas como por exemplo:
 

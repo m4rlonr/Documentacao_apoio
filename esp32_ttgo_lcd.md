@@ -1,4 +1,5 @@
-# Configuração e teste de ESP32 TTGO Oled
+<h1> Configuração e teste de ESP32 TTGO Oled </h1>
+---
 
 # Introdução
 Para realizar a instalação será necessário executar alguns passo como instalação de programas, configuração de bibliotecas e de dispositivo.
@@ -6,7 +7,7 @@ Os passos de dados contidos aqui são baseados em experiencia pessoal com o dese
 
 # Instalação de dependencias
 Levando em consideração que o usuário que está lendo o presente documento já tenha instalado a IDE e todas as dependências necessárias para o desenvolvimento com o ESP32, neste documento será abordado apenas o uso da biblioteca `TFT_eSPI`.
-## Passo 1 - Instalação de pacotes do Python
+## Instalação de pacotes do Python
 
 A primeira configuração é realizada ainda em dados do sistema no caso `Linux mint` via terminal.
 
@@ -18,12 +19,12 @@ Comando 2
 
     sudo apt-get install python3-serial
 
-## Passo 2 - Instalação de biblioteca TFT_eSPI
+## Instalação de biblioteca TFT_eSPI
 
 O ESP32 no qual esse documento é baseado é o TTGO e a placa que o indentifica é `ttgo-lora32-v1`.
 A IDE usada é PlatformIo e para fazer a instalação basta ir em "Libraries" e digitar pelo nome da biblioteca como dito no tema desse passo.
 
-## Passo 3 - Modificação de arquivos da Biblioteca
+## Modificação de arquivos da Biblioteca
 Para o funcionamento correto do código base funcionar é necessário alterar dados do código fonte da biblioteca e o caminho no PlatformIo é o seguinte:
 
     `Projeto>.pio>libdeps>TFT_eSPI>User_Setup_Select.h`

@@ -1,6 +1,9 @@
-# Instalação do psycopg2
+<h1> Instalação do psycopg2</h1>
+---
+## Objetivo
 A instalação do psycopg3 depende de outras packages e por esse motivo quando tentamos fazer a instalação do mesmo acaba havendo varios logs de problemas de instalação.
 
+## Instalação
 Para resolver isso antes de instala-lo é necessário executar os seguintes programas de instalação:
 
     sudo apt install libpq-dev python3-dev build-essential
