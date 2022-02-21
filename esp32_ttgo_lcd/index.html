@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Settings vscode - Documentação</title>
+        <title>Esp32 ttgo lcd - Documentação</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -36,7 +36,7 @@
                             <li class="navitem">
                                 <a href=".." class="nav-link">Bem vindo!</a>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dicas <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -61,7 +61,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Settings vscode</a>
+    <a href="../settings_vscode/" class="dropdown-item">Settings vscode</a>
 </li>
                                     
 <li>
@@ -77,12 +77,12 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Configurações e instalações <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../esp32_ttgo_lcd/" class="dropdown-item">Esp32 ttgo lcd</a>
+    <a href="./" class="dropdown-item active">Esp32 ttgo lcd</a>
 </li>
                                     
 <li>
@@ -115,17 +115,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../server_python_HTTP/" class="nav-link">
+                                <a rel="prev" href="../vi/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../Usando_MarkDown/" class="nav-link">
+                                <a rel="next" href="../Instala%C3%A7%C3%A3o_vuejs_e%20_vuetify/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/m4rlonr/edit/master/docs/settings_vscode.md" class="nav-link">Edit on m4rlonr</a>
+                                <a href="https://github.com/m4rlonr/edit/master/docs/esp32_ttgo_lcd.md" class="nav-link">Edit on m4rlonr</a>
                             </li>
                     </ul>
                 </div>
@@ -145,13 +145,25 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#preparo" class="nav-link">Preparo</a>
+            <li class="nav-item" data-level="1"><a href="#introducao" class="nav-link">Introdução</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#configurando" class="nav-link">Configurando</a>
+            <li class="nav-item" data-level="1"><a href="#instalacao-de-dependencias" class="nav-link">Instalação de dependencias</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#instalacao-de-pacotes-do-python" class="nav-link">Instalação de pacotes do Python</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#instalacao-de-biblioteca-tft_espi" class="nav-link">Instalação de biblioteca TFT_eSPI</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#modificacao-de-arquivos-da-biblioteca" class="nav-link">Modificação de arquivos da Biblioteca</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -159,68 +171,40 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1> Configurações do VScode para programar com Vue.Js</h1>
+<h1> Configuração e teste de ESP32 TTGO Oled </h1>
 <hr />
-<h2 id="preparo">Preparo</h2>
-<ol>
-<li>
-<p>Abra o VScode e baixe as exteções do Prettier e ESLint</p>
-</li>
-<li>
-<p>Após baixar as extensões aperte as seguintes teclas:<br><code>shift + crtl + o</code></p>
-</li>
-<li>
-<p>Apague o que tiver escrito na barra e digite:<br><code>&gt;Open settings (json)</code></p>
-</li>
-</ol>
-<h2 id="configurando">Configurando</h2>
-<ol>
-<li>Agora cole as seguinte configurações:<pre><code>{
-//Configurações Marlon
-"workbench.colorTheme": "Dracula",
-"editor.fontFamily": "Fira Code",
-"editor.fontSize": 14,
-"editor.suggestSelection": "first",
-"workbench.iconTheme": "material-icon-theme",
-"editor.fontLigatures": true,
-//
-//Configurações para trabalhar com VueJs
-"editor.formatOnSave": true,
-"vetur.format.defaultFormatter.js": "vscode-typescript",
-// "vetur.format.defaultFormatter.html": "js-beautify-html",
-"javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-"eslint.autoFixOnSave": false,
-"eslint.validate": [
-  {
-    "language": "vue",
-    "autoFix": true
-  },
-  {
-    "language": "html",
-    "autoFix": true
-  },
-  {
-    "language": "javascript",
-    "autoFix": true
-  }
-],
-"editor.rulers": [
-  80,
-  120
-],
-"terminal.integrated.fontSize": 14,
-"breadcrumbs.enabled": true,
-"editor.parameterHints.enabled": false,
-"editor.codeActionsOnSave": {
-  "source.fixAll.eslint": false
-},
-"workbench.startupEditor": "newUntitledFile",
-"window.zoomLevel": 0,
-"git.enableSmartCommit": true
-}
+<h1 id="introducao">Introdução</h1>
+<p>Para realizar a instalação será necessário executar alguns passo como instalação de programas, configuração de bibliotecas e de dispositivo.
+Os passos de dados contidos aqui são baseados em experiencia pessoal com o desenvolvimento.</p>
+<h1 id="instalacao-de-dependencias">Instalação de dependencias</h1>
+<p>Levando em consideração que o usuário que está lendo o presente documento já tenha instalado a IDE e todas as dependências necessárias para o desenvolvimento com o ESP32, neste documento será abordado apenas o uso da biblioteca <code>TFT_eSPI</code>.</p>
+<h2 id="instalacao-de-pacotes-do-python">Instalação de pacotes do Python</h2>
+<p>A primeira configuração é realizada ainda em dados do sistema no caso <code>Linux mint</code> via terminal.</p>
+<p>Comando 1</p>
+<pre><code>sudo apt install python-is-python3
 </code></pre>
-</li>
-</ol></div>
+<p>Comando 2</p>
+<pre><code>sudo apt-get install python3-serial
+</code></pre>
+<h2 id="instalacao-de-biblioteca-tft_espi">Instalação de biblioteca TFT_eSPI</h2>
+<p>O ESP32 no qual esse documento é baseado é o TTGO e a placa que o indentifica é <code>ttgo-lora32-v1</code>.
+A IDE usada é PlatformIo e para fazer a instalação basta ir em "Libraries" e digitar pelo nome da biblioteca como dito no tema desse passo.</p>
+<h2 id="modificacao-de-arquivos-da-biblioteca">Modificação de arquivos da Biblioteca</h2>
+<p>Para o funcionamento correto do código base funcionar é necessário alterar dados do código fonte da biblioteca e o caminho no PlatformIo é o seguinte:</p>
+<pre><code>`Projeto&gt;.pio&gt;libdeps&gt;TFT_eSPI&gt;User_Setup_Select.h`
+</code></pre>
+<p>Já com o arquivo aberto na linha 22 onde está a seguinte linha de código</p>
+<pre><code>#include &lt;User_Setup.h&gt;           // Default setup is root library folder
+</code></pre>
+<p>é necessário comenta-la, ou seja, adicionar "//" no inicio da linha.
+Já na linha 53 onde está o seguinte trecho de código:</p>
+<pre><code>//#include &lt;User_Setups/Setup25_TTGO_T_Display.h&gt;    // Setup file for ESP32 and TTGO T-Display ST7789V SPI bus TFT
+</code></pre>
+<p>Será necessário descomentar a linha, ou seja, retirar o "//" do inicio da linha.</p>
+<p>Feito todos esses passos basta abrir um exemplo da biblioteca e o compilar para dentro da placa, podem haver casos onde será necessário dar permissão ao usuário para compilar o código para dentro do ESP32 mas o erro pode ser resolvido com o seguinte comando:</p>
+<pre><code>sudo chmod 666 /dev/ttyUSB0
+</code></pre>
+<p>Comando esse que deve ser executado no terminal linux.</p></div>
             </div>
         </div>
 

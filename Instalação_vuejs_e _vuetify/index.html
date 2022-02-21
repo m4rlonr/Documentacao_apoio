@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Settings vscode - Documentação</title>
+        <title>Instalação vuejs e  vuetify - Documentação</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -36,7 +36,7 @@
                             <li class="navitem">
                                 <a href=".." class="nav-link">Bem vindo!</a>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dicas <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -61,7 +61,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Settings vscode</a>
+    <a href="../settings_vscode/" class="dropdown-item">Settings vscode</a>
 </li>
                                     
 <li>
@@ -77,7 +77,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Configurações e instalações <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -86,7 +86,7 @@
 </li>
                                     
 <li>
-    <a href="../Instala%C3%A7%C3%A3o_vuejs_e%20_vuetify/" class="dropdown-item">Instalação vuejs e  vuetify</a>
+    <a href="./" class="dropdown-item active">Instalação vuejs e  vuetify</a>
 </li>
                                     
 <li>
@@ -115,17 +115,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../server_python_HTTP/" class="nav-link">
+                                <a rel="prev" href="../esp32_ttgo_lcd/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../Usando_MarkDown/" class="nav-link">
+                                <a rel="next" href="../installing_mysql_data-base/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/m4rlonr/edit/master/docs/settings_vscode.md" class="nav-link">Edit on m4rlonr</a>
+                                <a href="https://github.com/m4rlonr/edit/master/docs/Instalação_vuejs_e _vuetify.md" class="nav-link">Edit on m4rlonr</a>
                             </li>
                     </ul>
                 </div>
@@ -145,12 +145,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#preparo" class="nav-link">Preparo</a>
+            <li class="nav-item" data-level="2"><a href="#instalacao-de-vuejs2" class="nav-link">Instalação de Vuejs(2)</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#configurando" class="nav-link">Configurando</a>
+            <li class="nav-item" data-level="2"><a href="#criacao-de-projeto" class="nav-link">Criação de projeto</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#instalacao-do-vuetify" class="nav-link">Instalação do vuetify</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -159,68 +164,29 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1> Configurações do VScode para programar com Vue.Js</h1>
+<h1> Instalação de Vuejs CLI e Vuetify </h1>
 <hr />
-<h2 id="preparo">Preparo</h2>
-<ol>
-<li>
-<p>Abra o VScode e baixe as exteções do Prettier e ESLint</p>
-</li>
-<li>
-<p>Após baixar as extensões aperte as seguintes teclas:<br><code>shift + crtl + o</code></p>
-</li>
-<li>
-<p>Apague o que tiver escrito na barra e digite:<br><code>&gt;Open settings (json)</code></p>
-</li>
-</ol>
-<h2 id="configurando">Configurando</h2>
-<ol>
-<li>Agora cole as seguinte configurações:<pre><code>{
-//Configurações Marlon
-"workbench.colorTheme": "Dracula",
-"editor.fontFamily": "Fira Code",
-"editor.fontSize": 14,
-"editor.suggestSelection": "first",
-"workbench.iconTheme": "material-icon-theme",
-"editor.fontLigatures": true,
-//
-//Configurações para trabalhar com VueJs
-"editor.formatOnSave": true,
-"vetur.format.defaultFormatter.js": "vscode-typescript",
-// "vetur.format.defaultFormatter.html": "js-beautify-html",
-"javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-"eslint.autoFixOnSave": false,
-"eslint.validate": [
-  {
-    "language": "vue",
-    "autoFix": true
-  },
-  {
-    "language": "html",
-    "autoFix": true
-  },
-  {
-    "language": "javascript",
-    "autoFix": true
-  }
-],
-"editor.rulers": [
-  80,
-  120
-],
-"terminal.integrated.fontSize": 14,
-"breadcrumbs.enabled": true,
-"editor.parameterHints.enabled": false,
-"editor.codeActionsOnSave": {
-  "source.fixAll.eslint": false
-},
-"workbench.startupEditor": "newUntitledFile",
-"window.zoomLevel": 0,
-"git.enableSmartCommit": true
-}
+<h2 id="instalacao-de-vuejs2">Instalação de Vuejs(2)</h2>
+<p>Para executar a instalação é necessário executar o comando a seguir no terminal:</p>
+<pre><code>sudo npm install -g @vue/cli @vue/cli-service-global
 </code></pre>
-</li>
-</ol></div>
+<h2 id="criacao-de-projeto">Criação de projeto</h2>
+<p>Com a ionstalação do Vuejs é possível criar um projeto com o comando a seguir sendo executado no terminal:</p>
+<pre><code>vue create &lt;SeuProjeto&gt;
+</code></pre>
+<p>Criado o projeto execute os seguintes comandos para verificar se a página inicial do VueJs será aberta</p>
+<pre><code>vue create &lt;SeuProjeto&gt;
+npm run serve
+</code></pre>
+<p>Se os passos anteriores foram realizados com sucesso será aberta a página de apresentação do Vuejs.</p>
+<h2 id="instalacao-do-vuetify">Instalação do vuetify</h2>
+<p>O Vuetify é uma framework que auxilia na criação de layouts de um projeto vue e para o instalar ainda dentro da pasta do projeto basta executar o comando:</p>
+<pre><code>vue add vuetify
+</code></pre>
+<p>Logo após execute o comando: </p>
+<pre><code>npm run serve
+</code></pre>
+<p>e verá que a página mudou por conta da instalação do Vuetify</p></div>
             </div>
         </div>
 
